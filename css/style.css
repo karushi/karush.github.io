@@ -1,0 +1,32 @@
+.jumbotron{
+  background-color:blue;
+  margin-left: -9em;
+  margin-right: -9em;
+}
+img{
+width: 200px;
+  height:200px;
+  margin-left: 25em;
+}
+p {
+ color: black;
+ margin-left: -5em;
+
+}
+
+a {
+  color: brown;
+.author{
+  color: blue;
+}
+@media screen and (min-width: 480px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
