@@ -1,32 +1,41 @@
 .jumbotron{
   background-color:blue;
-  margin-left: -9em;
-  margin-right: -9em;
 }
 img{
-width: 200px;
+width: 250px;
   height:200px;
-  margin-left: 25em;
+  float: left;10px;
 }
 p {
  color: black;
- margin-left: -5em;
-
 }
 
 a {
   color: brown;
+}
 .author{
   color: blue;
-}
-@media screen and (min-width: 480px) {
-    body {
-        background-color: black;
-        color: white;
-    }
-}
-@media screen and (min-width: 768px) {
-  body {
-    background-color: yellowgreen;
   }
+  h5{
+    color: blue;
+  }
+.title{
+  color: blue;
+}
+body{
+  background-color: grey;
+}
+.footer{
+  background-color: blue;
+  padding-top: 40px;
+  border: 2px solid #black;
+}
+.imporntant{
+  float: left;
+}
+.footer p{
+  text-align: center;
+}
+.footer h6{
+  text-align: center;
 }
