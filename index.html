@@ -2,91 +2,124 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pauline</title>
+    <title>Pauline </title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
    <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-<div class="container">
- <div class="jumbotron">
-   <h2><strong>Pauline Karush</strong></h2>
-<a href="#">HOME| </a> <a href="#about">ABOUT ME | </a><a href="#projects">MY PROJECTS</a> | <a href="#contact">CONTACT</a>
- </div>
- <div class="row">
-   <div class="col-md-4">
-      <img src="1.jpg" alt="my photo"/>
-   </div>
-   <div class="col-md-4">
-     <img src="1.png" alt="my photo"/>
-   </div>
-   <div class="col-md-4">
-      <img src="2.jpeg" alt="my photo"/>
-   </div>
- </div>
- <div class="row" id="about">
-   <div class="col-md-4">
- <h5>About Me</h5>
-<p>I am a web and graphic designer and a guru who embraces challenges
-while planning effectively on all assignment awarded to me. I have held the following
-roles/positions:
-<p>I decided to take this class because of the passion I have in programming.</p>
-</div>
-<div class="col-md-4">
-<h5 class="title">Jobs</h5>
-<ul><li> Receptionist - Anchinga and Associates</li>
-  <li> Cyber Attendant - Shedders Media and Communication production </li>
-  <li>Data Entry Clerk - SHOFCO</li>
-  <li>Receptionist - Family Dental Care</li>
-</ul>
-</p>
-</div>
-<div class="col-md-4">
-<h5 class="title">My Hobbies</h5>
-<ul>
-  <li>Socializing </li>
-  <li>Nature Walks </li>
-  <li>Meeting New People </li>
-  <li>Watching movies </li>
-  <li>Listen to Music </li>
- </ul>
-</p>
-</div>
-<div class="important">
-<div class="row" id="projects">
-  <div class="col-md-4">
-      <img src="3.jpeg" alt="my photo"/>
+	<!-- header -->
+  <div id="home" class="header-bg">
+    <div class="header-layer">
+      <div class="header-top">
+        <!-- container -->
+        <div class="container">
+          <div class="head-logo">
+            <a href="#"><img src="images/logo.png" alt="" height="40px" width="40px"></a>
+          </div>
+          <div class="top-nav">
+            <div class="nav-icon">
+              <a href="#" class="right_bt" id="activator"><span> </span> </a>
+            </div>
+             <div class="box" id="box" style="top: -1000px;">
+               <div class="box_content">        					                         
+                <div class="box_content_center">
+                  <div class="form_content">
+                    <div class="menu_box_list">
+                      <ul>
+                        <li><a href="#home" class="scroll"><span>home</span></a></li>
+                        <li><a href="#services" class="scroll"><span>services</span></a></li>
+                        <li><a href="#stories" class="scroll"><span>stories</span></a></li>
+                        <li><a href="#gallery" class="scroll"><span>gallery</span></a></li>
+                        <li><a href="#contact" class="scroll"><span>contact</span></a></li>
+                      </ul>
+                    </div>
+                    <a class="boxclose" id="boxclose"> <span> </span></a>
+                  </div>                                  
+                </div> 	
+              </div>  	  
+            </div>
+            <!-- start-click-drop-down-menu -->
+            <!-- start-dropdown -->
+             <script type="text/javascript">
+              var $ = jQuery.noConflict();
+                $(function() {
+                  $('#activator').click(function(){
+                    $('#box').animate({'top':'0px'},900);
+                  });
+                  $('#boxclose').click(function(){
+                  $('#box').animate({'top':'-1000px'},900);
+                  });
+                });
+                $(document).ready(function(){
+                //Hide (Collapse) the toggle containers on load
+                $(".toggle_container").hide(); 
+                //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+                $(".trigger").click(function(){
+                  $(this).toggleClass("active").next().slideToggle("500");
+                    return false; //Prevent the browser jump to the link anchor
+                });
+                          
+              });
+            </script>
+            <!-- //End-click-drop-down-menu -->
+            <!-- top-nav -->
+          </div>
+          <div class="clearfix"> </div>
+          <div class="head-info">
+            <h2>Pauline  Karushi</h2>
+            <p> 
+             I am Developer
+            </p>
+            <div class="botton">
+              <a href="#">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+        <!-- //container -->
+      </div>
     </div>
-    <div class="col-md-4">
-       <img src="4.jpeg" alt="my photo"/>
-     </div>
-     <div class="col-md-4">
-       <img src="p.jpeg" alt="my photo"/>
-     </div>
-     </div>
-   </div>
-<div class="row">
-  <div class="col-md-4">
- <ul>
- <li>My Pet: A website about pets developed using HTML and CSS -
-   <a href="https://karushi.github.io/pet-website/" target="_blank"> Github Link </a></li>
- </div>
-   <div class="col-md-4">
-   <li>My First Webpage: Introduction to web design about developed using HTML and CSS -
-     <a href="https://karushi.github.io/my-first-webpage/" target="_blank"> Github Link </a></li>
-   </div>
-   <div class="col-md-4">
-     <li>Travel Agency: A website about travel agencies developed using HTML and CSS - <a target="_blank" href=" https://karushi.github.io/Travel-Agency/"> Github Link </li>
- </ul>
-</div>
-</div>
-</div>
- </div>
-</div>
-<div class="footer" id="contact">
-  <h6>Contacts</h6>
-  <p>Number:0740211266</p>
-  <p>Email Adress: karuship@gamil.com</p>
-  <p>Adress: 63177-200-001</p>
-</div>
+  </div>
+  <!-- //header -->
+  <!-- service -->
+  <div id="services" class="service">
+    <!-- container -->
+    <div class="container">
+      <div class="service-grids">
+        <div class="row">
+        <div class="col-md-4 service-grid service-left">
+          <div class="creative"> </div>
+          <h3>I am Creative</h3>
+          <p>I am a web and graphic designer and developer who embraces challenges 
+          while planning effectively on all assignment awarded to me. 
+          I have held the following roles/positions:
+          
+          </p>
+        </div>
+        <div class="col-md-4 service-grid service-middle">
+          <div class="skills"> </div>
+          <h3>I Have Skills</h3>
+          <ul>
+            <li>Receptionist - Anchinga and Associates</li>
+              <li>Cyber Attendant - Shedders Media and Communication production</li>
+            <li>Data Entry Clerk - SHOFCO</li>
+            <li>Receptionist - Family Dental Care</li>
+          </ul>
+        </div>
+        <div class="col-md-4 service-grid service-right">
+          <div class="help"> </div>
+          <h3>l Love To Help</h3>
+          <p>Lorem ipsum dolor sit amet, dicta. Nostro 
+            gubergren in ius, ea nam vocent. An verear 
+            efficiantur usu
+          </p>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <!-- //container -->
+  </div>
+cd 
   </body>
 </html>
