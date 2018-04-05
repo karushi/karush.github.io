@@ -12,8 +12,8 @@
 	padding-top: 4em;
 }
 .head-logo{
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 }
 .top-nav{
 	float:right;
@@ -110,7 +110,7 @@ ul.button li{
 	display: inline-block;
 }
 ul.button li a{
-	color: #666;
+	color: rgb(51, 48, 48);
 	padding: 0.8em 2em;
 	border: 2px solid #fff;
 	text-decoration: none;
@@ -181,7 +181,7 @@ ul.button li a:hover{
 .service-grid p{
 	font-size:16px;
 	margin:0;
-	color:#808080;
+	color:#0e0d0d;
 }
 .creative{
 	background:url(../images/icons.png) no-repeat 0px 0px;
@@ -209,4 +209,46 @@ ul.button li a:hover{
 }
 .service-right:hover div.help{
 	background: url(../images/icons.png) no-repeat -219px -115px;
+}
+
+map{
+	position:relative;
+}
+.map iframe
+{
+	width: 100%;
+	min-height: 300px;
+	border: none;
+}
+.location{
+	position: absolute;
+	top: 30%;
+	left: 39%;
+}
+.find{
+	background: #333333;
+	position:relative;
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+.find p{
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	margin:0;
+	color:#FA694E;
+	padding: 2.5em 4em;
+}
+.arrow{
+	background: url(../images/icons.png) no-repeat -87px -232px;
+	width: 27px;
+	height: 12px;
+	position: absolute;
+	left: 44%;
+	top: 98%;
+}
+.contact-bottom {
+	margin-top: 5em;
 }
